@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Kobold"
         mc:Ignorable="d"
-        Title="KOB-old" Height="700" Width="700">
+        Title="KOB-old" Height="700" Width="700" Icon="/Icons/KoboldArt.ico">
     <Grid>
         <Grid>
             
