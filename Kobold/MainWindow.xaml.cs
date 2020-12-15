@@ -23,6 +23,12 @@ namespace Kobold
         public MainWindow()
         {
             InitializeComponent();
+            HelloKOBold();
+        }
+
+        public void HelloKOBold()
+        {
+            xTextAdventureOutput.Text = "Greetings, my name is Kind Operating Bot. You may also Call me KOBold. This of course has to do with my dungeon RPG style text game. Please Use these Key words to begin. Start: to start an adventure, Kill: to end this program, Josh: for the funky magic that I can create.";
         }
     }
 }
