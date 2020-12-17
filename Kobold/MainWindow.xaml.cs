@@ -20,43 +20,40 @@ namespace Kobold
     /// </summary>
     public partial class MainWindow : Window
     {
+        public int i;
+        public string PlayerSubmitTA;
 
-        string UserInput;
-        string CurrentNext;
         public MainWindow()
         {
             InitializeComponent();
-            HelloKOBold();
+            BeginOneDotONE();
         }
 
-        public void HelloKOBold()
+        public void BeginOneDotONE()
         {
-            xTextAdventureOutput.Text = "Greetings, my name is Kind Operating Bot. You may also Call me KOBold. This of course has to do with my dungeon RPG style text game. Please Use these Key words to begin. Start: to start an adventure, Kill: to end this program, Josh: for the funky magic that I can create.";
+            //xTextAdventureOutput.Text = "Hello, I have been made to give you a fun and exiting new experiance when it comes to text adventures. I want to be the perfect and most well made AI that generates dungeons for the player to explore givin their wants and needs. \n\n To begin please state that you would like to begin the text adventure and the number of levels that you would like in it.";
+
         }
+
+
+        public void method1()
+        {
+
+        }
+        public void method2()
+        {
+
+        }
+
+
 
         private void xSubmit_Click(object sender, RoutedEventArgs e)
         {
-            UserInput = xTextAdventureUserImput.Text.ToLower();
-            NewCallAll();
-        }
-
-        public void NewCallAll()
-        {
-            if (UserInput == "start")
-            {
-                MakingAPTA();
-            }
-        }
-
-        public void MakingAPTA()
-        {
-            xTextAdventureOutput.Text = "Alright So Im going to generate you a new text adventure with 2 events in that adventure. For now it may be a little buggy";
-            CurrentNext = "This is the next thing to write";
+            PlayerSubmitTA = xTextAdventureUserImput.Text;
         }
 
         private void xNext_Click(object sender, RoutedEventArgs e)
         {
-            xTextAdventureOutput.Text = CurrentNext;
         }
     }
 }
